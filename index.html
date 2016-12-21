@@ -35,18 +35,52 @@
 				</ul>
 				<p class="test-clear"></p>
 			</div>
-			<div id="colosel-div">
+			<p class="test-clear"></p>
+			<br>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 3</div>
+				  <img class="slider-images" src="images/img1.png" style="width:100%">
+				  <div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img class="slider-images" src="images/img2.png" style="width:100%">
+				  <div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img class="slider-images" src="images/img3.png" style="width:100%">
+				  <div class="text">Caption Three</div>
+				</div>
 
 			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+
+			<br>
+
 			<div id="marquee-div">
 				<marquee>Some informations will be displayed here...</marquee>
 			</div>
+
+			<br>
+
 			<div id="content-div">
 
 			</div>
+			<hr>
 			<div id="footer">
-				<div id="axis-physics-social-links-div">
-					<span id="axis-physics-social-links-tag">Axis Physics Links:</span>
+				<div id="axis-physics-social-links-div" class="social-links-div">
+					<span id="axis-physics-social-links-tag" class="social-links-tag">Axis Physics Links:</span>
 					<ul class="social-links">
 						<li class="fb-sprite"><a href="#"><img src="images/fb-color.png"></a></li>
 						<li class="twitter-sprite"><a href="#"><img src="images/twitter-color.png"></a></li>
@@ -58,8 +92,8 @@
 					<span id="developed-by-tag">Developed By:</span>
 					<span id="developed-by-value">Akanshu Gupta</span>
 				</div>
-				<div id="developer-social-links-div">
-					<span id="developer-social-links-tag">Developer Links:</span>
+				<div id="developer-social-links-div" class="social-links-div">
+					<span id="developer-social-links-tag" class="social-links-tag">Developer Links:</span>
 					<ul class="social-links">
 						<li class="fb-sprite"><a href="#"><img src="images/fb-color.png"></a></li>
 						<li class="twitter-sprite"><a href="#"><img src="images/twitter-color.png"></a></li>
@@ -69,5 +103,26 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			    var i;
+			    var slides = document.getElementsByClassName("mySlides");
+			    var dots = document.getElementsByClassName("dot");
+			    for (i = 0; i < slides.length; i++) {
+			       slides[i].style.display = "none";  
+			    }
+			    slideIndex++;
+			    if (slideIndex> slides.length) {slideIndex = 1}    
+			    for (i = 0; i < dots.length; i++) {
+			        dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndex-1].style.display = "block";  
+			    dots[slideIndex-1].className += " active";
+			    setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+		</script>
 	</body>
 </html>
