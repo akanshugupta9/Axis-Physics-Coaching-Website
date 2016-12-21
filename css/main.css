@@ -238,6 +238,7 @@ html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h
 /*slide show end*/
 
 /*individual element designs end*/
+
 body{
 	background: grey;
 }
@@ -247,3 +248,17 @@ marquee{
 }
 
 /*individual element designs end*/
+
+/*footer design start*/
+
+.social-links-div{
+	width: 25%;
+	margin: 0px auto;
+}
+
+#developed-by-div{
+	width: 25%;
+	margin: 0px auto;
+}
+
+/*footer design end*/
