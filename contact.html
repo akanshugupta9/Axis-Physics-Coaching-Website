@@ -1,8 +1,8 @@
 <html>
 <head>
-	<title>Abhishek Divoliya</title>
+	<title>Contact</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/abhishek.css">
+	<link rel="stylesheet" href="css/Contact.css">
 </head>
 <body>
 	<div id="container">
@@ -16,7 +16,7 @@
 			<ul class="cf topmenu">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#">About Us</a></li>
-				<li><a href="#" class="current">Instructors</a>
+				<li><a href="#">Instructors</a>
 					<ul class="submenu">
 						<li><a href="abhishek.html">Abhishek Divoliya</a></li>
 						<li><a href="abhishek.html">Raj Kushwaha</a></li>
@@ -34,24 +34,42 @@
 						<li><a href="#">AIMS + NEET</a></li>
 					</ul>
 				</li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.html" class="current">Contact</a></li>
 			</ul>
 			<p class="test-clear"></p>
 		</div>
 		<br>
 		<div id="page-content">
 			<div id="left">
-				<img src="images/photo.jpg">
-				<p>"At the top of the page, you’ll see a cute pattern known as a snowflake fractal."</p>
+				<h3>Axis Physics</h3>
+				<hr>
+				<ul>
+					<li>Axis Physics for JEE mains + advance
+						<ul>
+							<li>Kakadeo, Kanpur</li>
+							<li>Office: 5896587489</li>
+							<li>Mobile: 5896587489</li>
+							<li>e-mail: axis@gmail.com</li>
+						</ul>
+					</li>
+					<hr>
+					<li>Axis Physics for NEET + AIMS
+						<ul>
+							<li>Kakadeo, Kanpur</li>
+							<li>Office: 5896587489</li>
+							<li>Mobile: 5896587489</li>
+							<li>e-mail: axis@gmail.com</li>
+						</ul>
+					</li>
+					<hr>
+				</ul>
 			</div>
 			<div id="right">
-				<p>At the top of the page, you’ll see a cute pattern known as a snowflake fractal. Don’t tell anyone, but this is an important mathematical object that’s been widely studied. For our purposes, it’s just a cool sketch of a snowflake. If you scroll down that same web page a little, you’ll see a box with a large triangle in it and arrows underneath. If you press the right-arrow button repeatedly, you’ll see the steps used to create the snowflake. It doesn’t look much like a snowflake at first, but after a few steps, it starts looking more and more like one, until it’s done</p>
-				<p>At the top of the page, you’ll see a cute pattern known as a snowflake fractal. Don’t tell anyone, but this is an important mathematical object that’s been widely studied. For our purposes, it’s just a cool sketch of a snowflake. If you scroll  until it’s done</p>
-				<p>At the top of the page, you’ll see a cute pattern known as a snowflake fractal. Don’t tell anyone, repeatedly, you’ll see the steps used to create the snowflake. It doesn’t look much like a snowflake at first, but after a few steps, it starts looking more and more like one, until it’s done</p>
+				<dir id="map"></dir>
 			</div>
 		</div>
-		<p class="test-clear"></p>
 		<br>
+		<p class="test-clear"></p>
 		<hr style="clear: both;">
 		<div id="footer">
 			<br>
@@ -82,5 +100,22 @@
 			<br>
 		</div>
 	</div>
+	<script>
+      function initMap() {
+        var uluru = {lat: 26.4798121, lng: 80.29305410000006};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          title: 'Axis Physics'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdHJI84lCFGEcc5JQ8Es6O37EbxOc5jcU&callback=initMap">
+    </script>
 	</body>
 	</html>

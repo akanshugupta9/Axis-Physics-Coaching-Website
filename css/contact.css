@@ -1,0 +1,51 @@
+#left{
+	float: left;
+	padding: 10px;
+	width: 280px;
+	background: #916a31;
+	margin-bottom: -99999px;
+  	padding-bottom: 99999px;
+}
+
+#right{
+	background: white;
+	float: right;
+	width: 900px;
+	margin-bottom: -99999px;
+  	padding-bottom: 99999px;
+}
+
+#map{
+	width: 100%;
+	height: 500px;
+}
+
+#page-content{
+	overflow: hidden;
+}
+
+#left h3{
+	margin: 10px;
+	font-weight: bold;
+	font-size: 2em;
+	color: white;
+}
+
+#left li{
+	color: white;
+}
+
+#left > ul > li{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+#left > ul > li > ul > li{
+	font-weight: normal;
+	font-size: 1em;
+}
+
+#left li{
+	margin-left: 25px;
+}

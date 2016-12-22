@@ -244,7 +244,9 @@ body{
 }
 
 marquee{
-	background: white;
+	background: #916a31;
+	color: white;
+	line-height: 1.5em;
 }
 
 /*individual element designs end*/

@@ -1,7 +1,7 @@
 #left{
 	float: left;
 	width: 300px;
-	background: black;
+	background: #916a31;
 	margin-bottom: -99999px;
   	padding-bottom: 99999px;
 }
@@ -29,8 +29,9 @@
 }
 
 #right p{
-	font-size: 1em;
+	font-size: 1.2em;
 	margin: 10px 50px 10px 50px;
+	color: #916a31;
 }
 
 #right p:last-child{
