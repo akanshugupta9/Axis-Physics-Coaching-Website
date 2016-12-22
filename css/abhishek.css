@@ -1,0 +1,55 @@
+#left{
+	float: left;
+	width: 300px;
+	background: black;
+	margin-bottom: -99999px;
+  	padding-bottom: 99999px;
+}
+
+#right{
+	background: white;
+	float: right;
+	width: 900px;
+	margin-bottom: -99999px;
+  	padding-bottom: 99999px;
+}
+
+#left p, #right p{
+	font-family: ChunkFiveRegular;
+}
+
+#left p{
+	color: white;
+	margin: 1em;
+	font-size: 2.5em;
+}
+
+#right p:first-child{
+	margin: 300px 50px 10px 50px;
+}
+
+#right p{
+	font-size: 1em;
+	margin: 10px 50px 10px 50px;
+}
+
+#right p:last-child{
+	margin: 10px 50px 50px 50px;
+}
+
+#left img{
+	border-radius: 50%;
+	width: 200px;
+	margin: 50px;
+}
+
+#page-content{
+	overflow: hidden;
+}
+
+@font-face {
+         font-family: 'ChunkFiveRegular';
+         src: url('Milkshake.otf'),
+         		url('Milkshake.ttf');
+         font-weight: normal;
+}
