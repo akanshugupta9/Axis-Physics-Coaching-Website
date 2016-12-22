@@ -1,131 +1,157 @@
 <html>
-	<head>
-		<title>Home</title>
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<div id="container">
-			<div id="banner-div">
-				<img src="images/banner.jpg">
-			</div>
-			<div id="nav-div">
-				<p class="test-clear"></p>
-				<ul class="cf topmenu">
-					<li><a href="#" class="current">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Instructors</a>
-						<ul class="submenu">
-							<li><a href="#">Abhishek Divoliya</a></li>
-							<li><a href="#">Raj Kushwaha</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Course Details</a>
-						<ul class="submenu">
-							<li><a href="#">JEE mains + Advance</a></li>
-							<li><a href="#">AIMS + NEET</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Achievements</a>
-						<ul class="submenu">
-							<li><a href="#">JEE mains + Advance</a></li>
-							<li><a href="#">AIMS + NEET</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<p class="test-clear"></p>
-			</div>
-			<p class="test-clear"></p>
-			<br>
-			<div class="slideshow-container">
-
-				<div class="mySlides fade">
-				  <div class="numbertext">1 / 3</div>
-				  <img class="slider-images" src="images/img1.png" style="width:100%">
-				  <div class="text">Caption Text</div>
-				</div>
-
-				<div class="mySlides fade">
-				  <div class="numbertext">2 / 3</div>
-				  <img class="slider-images" src="images/img2.png" style="width:100%">
-				  <div class="text">Caption Two</div>
-				</div>
-
-				<div class="mySlides fade">
-				  <div class="numbertext">3 / 3</div>
-				  <img class="slider-images" src="images/img3.png" style="width:100%">
-				  <div class="text">Caption Three</div>
-				</div>
-
-			</div>
-			<br>
-
-			<div style="text-align:center">
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			  <span class="dot"></span> 
-			</div>
-
-			<br>
-
-			<div id="marquee-div">
-				<marquee>Some informations will be displayed here...</marquee>
-			</div>
-
-			<br>
-
-			<div id="content-div">
-
-			</div>
-			<hr>
-			<div id="footer">
-				<div id="axis-physics-social-links-div" class="social-links-div">
-					<span id="axis-physics-social-links-tag" class="social-links-tag">Axis Physics Links:</span>
-					<ul class="social-links">
-						<li class="fb-sprite"><a href="#"><img src="images/fb-color.png"></a></li>
-						<li class="twitter-sprite"><a href="#"><img src="images/twitter-color.png"></a></li>
-						<li class="google-plus-sprite"><a href="#"><img src="images/google-color.png"></a></li>
-						<li class="linked-in-sprite"><a href="#"><img src="images/linked-in-color.png"></a></li>
-					</ul>
-				</div>
-				<br>
-				<div id="developed-by-div">
-					<span id="developed-by-tag">Developed By:</span>
-					<span id="developed-by-value">Akanshu Gupta</span>
-				</div>
-				<br>
-				<div id="developer-social-links-div" class="social-links-div">
-					<span id="developer-social-links-tag" class="social-links-tag">Developer Links:</span>
-					<ul class="social-links">
-						<li class="fb-sprite"><a href="#"><img src="images/fb-color.png"></a></li>
-						<li class="twitter-sprite"><a href="#"><img src="images/twitter-color.png"></a></li>
-						<li class="google-plus-sprite"><a href="#"><img src="images/google-color.png"></a></li>
-						<li class="linked-in-sprite"><a href="#"><img src="images/linked-in-color.png"></a></li>
-					</ul>
-				</div>
-				<br>
-			</div>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="container">
+		<br>
+		<div id="banner-div">
+			<img src="images/banner.jpg">
 		</div>
-		<script>
-			var slideIndex = 0;
-			showSlides();
+		<br>
+		<div id="nav-div">
+			<p class="test-clear"></p>
+			<ul class="cf topmenu">
+				<li><a href="#" class="current">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Instructors</a>
+					<ul class="submenu">
+						<li><a href="#">Abhishek Divoliya</a></li>
+						<li><a href="#">Raj Kushwaha</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Course Details</a>
+					<ul class="submenu">
+						<li><a href="#">JEE mains + Advance</a></li>
+						<li><a href="#">AIMS + NEET</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Achievements</a>
+					<ul class="submenu">
+						<li><a href="#">JEE mains + Advance</a></li>
+						<li><a href="#">AIMS + NEET</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p class="test-clear"></p>
+		</div>
+		<p class="test-clear"></p>
+		<br>
+		<div class="slideshow-container">
 
-			function showSlides() {
-			    var i;
-			    var slides = document.getElementsByClassName("mySlides");
-			    var dots = document.getElementsByClassName("dot");
-			    for (i = 0; i < slides.length; i++) {
-			       slides[i].style.display = "none";  
-			    }
-			    slideIndex++;
-			    if (slideIndex> slides.length) {slideIndex = 1}    
-			    for (i = 0; i < dots.length; i++) {
-			        dots[i].className = dots[i].className.replace(" active", "");
-			    }
-			    slides[slideIndex-1].style.display = "block";  
-			    dots[slideIndex-1].className += " active";
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img class="slider-images" src="images/img1.png" style="width:100%">
+				<div class="text">Caption Text</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img class="slider-images" src="images/img2.png" style="width:100%">
+				<div class="text">Caption Two</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img class="slider-images" src="images/img3.png" style="width:100%">
+				<div class="text">Caption Three</div>
+			</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+
+		<br>
+
+		<div id="marquee-div">
+			<marquee>Some informations will be displayed here...</marquee>
+		</div>
+
+		<br>
+
+		<div id="content-div">
+			<div id="right-div"></div>
+			<div id="left-div11">
+				<h3>Important:-</h3>
+				<ul>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;ljhjj. scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+				</ul>
+			</div>
+			<div id="left-div12">
+				<h3>News:-</h3>
+				<ul>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;ljhjj. scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+					<li>scssd ds d sdkjiofd kjdkdfsjdoi csd d. dsjfoid djsi;l.</li>
+				</ul>
+			</div>
+			<h2>Our Gems</h2>
+			<div id="left-div2"></div>
+			<div id="left-div3"></div>
+		</div>
+		<hr style="clear: both;">
+		<div id="footer">
+			<br>
+			<div id="axis-physics-social-links-div" class="social-links-div">
+				<span id="axis-physics-social-links-tag" class="social-links-tag">Axis Physics Links:</span>
+				<ul class="social-links">
+					<li class="fb-sprite"><a href="#"><img src="images/fb-color.png"></a></li>
+					<li class="twitter-sprite"><a href="#"><img src="images/twitter-color.png"></a></li>
+					<li class="google-plus-sprite"><a href="#"><img src="images/google-color.png"></a></li>
+					<li class="linked-in-sprite"><a href="#"><img src="images/linked-in-color.png"></a></li>
+				</ul>
+			</div>
+			<br>
+			<div id="developed-by-div">
+				<span id="developed-by-tag">Developed By:</span>
+				<span id="developed-by-value">Akanshu Gupta</span>
+			</div>
+			<br>
+			<div id="developer-social-links-div" class="social-links-div">
+				<span id="developer-social-links-tag" class="social-links-tag">Developer Links:</span>
+				<ul class="social-links">
+					<li class="fb-sprite"><a href="#"><img src="images/fb-color.png"></a></li>
+					<li class="twitter-sprite"><a href="#"><img src="images/twitter-color.png"></a></li>
+					<li class="google-plus-sprite"><a href="#"><img src="images/google-color.png"></a></li>
+					<li class="linked-in-sprite"><a href="#"><img src="images/linked-in-color.png"></a></li>
+				</ul>
+			</div>
+			<br>
+		</div>
+	</div>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex> slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
 			    setTimeout(showSlides, 2000); // Change image every 2 seconds
 			}
 		</script>
 	</body>
-</html>
+	</html>

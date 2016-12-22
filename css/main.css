@@ -262,3 +262,43 @@ marquee{
 }
 
 /*footer design end*/
+
+/*home page content design start*/
+
+#left-div11, #left-div12{
+	overflow: scroll;
+	margin: 10px;
+	width: 375px;
+	height: 100px;
+	background: yellow;
+	float: left;
+}
+
+#left-div2, #left-div3{
+	margin: 10px;
+	width: 780px;
+	height: 100px;
+	background: yellow;
+}
+
+#left-div11 li, #left-div12 li{
+	margin-left: 25px;
+}
+
+#left-div11 h3, #left-div12 h3{
+	margin: 5px;
+}
+
+#right-div{
+	margin: 10px;
+	width: 390px;
+	height: 200px;
+	background: blue;
+	float: right;
+}
+
+#content-div > h2 {
+	text-align: center;
+}
+
+/*home page content design end*/
