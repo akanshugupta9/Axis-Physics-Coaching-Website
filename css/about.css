@@ -1,0 +1,31 @@
+#video-div{
+	width: 420px;
+	height: 315px;
+	margin: 0 auto;
+}
+
+#history h3, #mission h3, #vission h3, #methodology h3{
+	font-family: ChunkFiveRegular;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+}
+
+blockquote{
+	font-family: ChunkFiveRegular;
+	text-align: center;
+	font-size: 1.2em;
+	color: white;
+}
+
+#history p, #mission p, #vission p, #methodology p{
+	color: white;
+	margin: 25px;
+	font-size: 1em;
+}
+
+#methodology li{
+	color: white;
+	font-size: 1em;
+	margin-left: 75px;
+}

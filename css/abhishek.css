@@ -47,10 +47,3 @@
 #page-content{
 	overflow: hidden;
 }
-
-@font-face {
-         font-family: 'ChunkFiveRegular';
-         src: url('Milkshake.otf'),
-         		url('Milkshake.ttf');
-         font-weight: normal;
-}
