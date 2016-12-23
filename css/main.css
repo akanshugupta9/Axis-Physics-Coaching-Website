@@ -249,7 +249,9 @@ html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h
 /*individual element designs end*/
 
 body{
-	background: grey;
+	background: url("../images/background2.png");
+	background-attachment: fixed;
+	background-repeat: repeat;
 }
 
 marquee{
@@ -264,6 +266,20 @@ marquee{
 
 #footer{
 	background: #916a31;
+}
+
+.footer-tags{
+	font-weight: bold;
+	font-size: .8em;
+	line-height: 1em;
+	color: white;
+}
+
+#akanshu{
+	font-size: 1.2em;
+	margin-left: 20px;
+	font-family: ChunkFiveRegular;
+	color: white;
 }
 
 .social-links-div{
