@@ -1,0 +1,69 @@
+.batch{
+	padding: 20px;
+	border-radius: 10px;
+	margin: 25px;
+	width: 1110px;
+	background: white;
+}
+
+.batch h2{
+	font-weight: bold;
+	text-align: center;
+	color: #916a31;
+	font-size: 2em;
+	font-family: ChunkFiveRegular;
+}
+
+.batch h4{
+	margin: 10px 0;
+	font-size: 1.5em;
+	color: #916a31;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.batch p{
+	font-size: 1em;
+	font-style: italic;
+}
+
+.batch h4.syllabus-heading{
+	text-align: center;
+}
+
+td, th{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+th{
+	background: #717171;
+	color: white;
+}
+
+table{
+	margin: 0px auto;
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+
+th.sn, td.sn{
+	width: 50px;
+}
+
+th.chapter, td.chapter{
+	width: 250px;
+}
+
+th.content, td.content{
+	width: 500px;
+}
+
+tr:nth-child(odd){
+	background: #eee;
+}
+
+td, th{
+	text-align: center;
+	padding: 10px;
+}
